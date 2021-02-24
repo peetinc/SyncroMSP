@@ -18,7 +18,7 @@ Opens the `postinstall` script in `TextEdit.app`
 You must edit the `postinstall` to your liking, save AND quit `TextEdit.app`
 * Comment out or remove the "#waiting while device will be registered" section allow for unattendend install
 
-Ejoy the warnings about testing and retesting
-The output will be in the build directory of your munkipkg project.
+Ejoy the warnings about `testing and retesting`.
+The new pkg will be in the build directory of your `munkipkg` project.
 `RepackageSyncroDesktop.sh` will open the directory in the finder when finished.
 
