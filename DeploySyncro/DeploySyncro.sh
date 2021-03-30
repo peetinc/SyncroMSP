@@ -68,12 +68,15 @@ LogIt "Start: Installing SyncroMSP installer package - $SYNCRO_PKG."
 installer -pkg "$TEMP_DIR/$SYNCRO_PKG" -target / 1>&2
 EXIT_CODE=$?
 LogIt "END: Installing SyncroMSP installer package - $SYNCRO_PKG."
+
 ### Clean Up
 LogIt "Start: Removing temporary files."
 rm -rf $TEMP_DIR
 if ($noUI eq "true"); then
 	rm /tmp/syncro-noui
 fi
+
+### Exit politely
 if [ $EXIT_CODE -eq 0 ]; then
 	LogIt "Success: SyncroMSP installed."
 	else
