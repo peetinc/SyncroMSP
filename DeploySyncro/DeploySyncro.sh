@@ -4,7 +4,7 @@
 customerId=""
 policyid=""
 shopkey=""
-If_Present_Uninstall=true
+If_Present_Uninstall=false
 noUI=true
 
 ### Usage ###
