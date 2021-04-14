@@ -49,6 +49,10 @@ if ($If_Present_Uninstall eq "true") && [ -f "/Library/Application Support/Syncr
 	pkgutil --forget "com.syncromsp" 1>&2
 	LogIt "End: Uninstall SyncroMSP Agent."
 fi
+if ($If_Present_Uninstall eq "false") && [ -f "/Library/Application Support/SyncroMSP/SyncroMSP.app/Contents/MacOS/scripts/uninstall.sh" ]; then
+	LogIt "Info: SyncroMSP Agent already deployed."
+	exit 0
+fi
 	
 
 #### Suppress UI
