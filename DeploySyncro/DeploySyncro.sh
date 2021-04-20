@@ -1,6 +1,8 @@
 #!/bin/bash
 ### Usage: ./DeploySyncro.sh [-c customerId] [-p policyid] [-k shopkey] [-u Uninstall_if_Present <*true|false>] [-n noUI <*true|false>]
 ### Tip: Find customerId, policyid, shopkey in your installer URL. 
+### InstallerURL: 
+
 customerId=""
 policyid=""
 shopkey=""
